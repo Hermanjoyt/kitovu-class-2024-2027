@@ -1,0 +1,1914 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>2024–2027 Class of Kitovu</title>
+
+  <meta
+    name="description"
+    content="Official website of the 2024–2027 Class of Kitovu."
+  >
+
+  <link
+    rel="canonical"
+    href="https://kitovu-class-2024-2027.pages.dev/"
+  >
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    :root {
+      --bg: #07111f;
+      --bg2: #0a1424;
+      --card: #0f1d2f;
+      --border: #27384e;
+      --text: #f5f7fb;
+      --muted: #9faabc;
+      --blue: #55bfe9;
+      --gold: #ffd166;
+      --green: #25d366;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(1120px, 92%);
+      margin: auto;
+    }
+
+    /* HEADER */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(7,17,31,.97);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+
+    .nav {
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+      border-radius: 50%;
+    }
+
+    .logo-text {
+      font-weight: 900;
+    }
+
+    .logo-text span {
+      display: block;
+      color: var(--blue);
+      font-size: 11px;
+      letter-spacing: 1.5px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 19px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: #d8deea;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .nav-links a:hover {
+      color: var(--gold);
+    }
+
+    .menu-toggle {
+      display: none;
+      padding: 9px 12px;
+      background: transparent;
+      color: white;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height: 88vh;
+      display: flex;
+      align-items: center;
+      background:
+        linear-gradient(rgba(7,17,31,.72), rgba(7,17,31,.96)),
+        url("class-2027.png") center/cover no-repeat;
+    }
+
+    .hero-content {
+      max-width: 760px;
+      padding: 90px 0;
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      font-size: clamp(44px, 7vw, 84px);
+      line-height: 1;
+      margin: 18px 0 25px;
+    }
+
+    .hero h1 span {
+      display: block;
+      color: var(--blue);
+    }
+
+    .hero p {
+      max-width: 650px;
+      color: #c0c9d7;
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      padding: 12px 17px;
+      border-radius: 9px;
+      font-size: 13px;
+      font-weight: 900;
+      transition: .25s;
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: #111;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+    }
+
+    .btn-secondary {
+      background: rgba(255,255,255,.04);
+      border: 1px solid #40516a;
+      color: white;
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--blue);
+      transform: translateY(-3px);
+    }
+
+    /* GENERAL */
+
+    section {
+      scroll-margin-top: 90px;
+    }
+
+    .section {
+      padding: 90px 0;
+    }
+
+    .section-title {
+      max-width: 720px;
+      margin-bottom: 42px;
+    }
+
+    .section-title span {
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .section-title h2 {
+      font-size: clamp(32px, 5vw, 50px);
+      line-height: 1.05;
+      margin: 10px 0 15px;
+    }
+
+    .section-title p {
+      color: var(--muted);
+    }
+
+    /* MUSIC */
+
+    .music-section {
+      padding: 50px 0;
+      background: #091625;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .music-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 25px;
+      padding: 28px;
+      border-radius: 16px;
+      background: rgba(255,255,255,.025);
+      border: 1px solid var(--border);
+    }
+
+    .music-info h2 {
+      margin-bottom: 5px;
+    }
+
+    .music-info p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .music-status {
+      margin-top: 10px;
+      color: var(--blue);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .music-controls {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .music-btn {
+      border: none;
+      border-radius: 9px;
+      padding: 11px 15px;
+      font-weight: 900;
+      cursor: pointer;
+    }
+
+    .play-btn {
+      background: var(--gold);
+      color: #111;
+    }
+
+    .stop-btn {
+      background: rgba(255,255,255,.08);
+      color: white;
+      border: 1px solid var(--border);
+    }
+
+    audio {
+      display: none;
+    }
+
+    /* ABOUT */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .about-image {
+      overflow: hidden;
+      border-radius: 18px;
+      border: 1px solid var(--border);
+    }
+
+    .about-image img {
+      width: 100%;
+      aspect-ratio: 4/3;
+      object-fit: cover;
+    }
+
+    .about-text p {
+      color: var(--muted);
+      margin-bottom: 17px;
+    }
+
+    /* CARDS */
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      padding: 28px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      transition: .3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #3e91ba;
+    }
+
+    .card-icon {
+      display: inline-flex;
+      width: 42px;
+      height: 42px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      background: rgba(255,209,102,.12);
+      color: var(--gold);
+      font-weight: 900;
+      margin-bottom: 18px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    /* LEADERS */
+
+    .leaders-section {
+      padding: 90px 0;
+      background: rgba(10,20,36,.96);
+    }
+
+    .leaders-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+
+    .leader-card {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding: 25px;
+      background: rgba(15,29,47,.97);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      transition: .3s;
+    }
+
+    .leader-card:hover {
+      transform: translateY(-5px);
+      border-color: #3e91ba;
+    }
+
+    .leader-avatar {
+      flex-shrink: 0;
+      width: 78px;
+      height: 78px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg,#ffd166,#f4a261);
+      color: #07111f;
+      font-size: 22px;
+      font-weight: 900;
+    }
+
+    .leader-info {
+      min-width: 0;
+    }
+
+    .leader-role {
+      display: block;
+      color: var(--blue);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1.4px;
+      margin-bottom: 5px;
+    }
+
+    .leader-info h3 {
+      font-size: 21px;
+      line-height: 1.25;
+      margin-bottom: 3px;
+    }
+
+    .leader-info p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 13px;
+    }
+
+    .leader-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .social-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .social-btn.whatsapp {
+      background: var(--green);
+      color: white;
+    }
+
+    .social-btn.whatsapp:hover {
+      background: #1ebe5d;
+    }
+
+    .social-btn.pending {
+      background: rgba(255,255,255,.07);
+      color: #8996a8;
+      border: 1px dashed rgba(255,255,255,.18);
+    }
+
+    /* ACADEMICS */
+
+    .academics {
+      background: #091625;
+    }
+
+    .academic-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .academic-item {
+      padding: 23px;
+      border: 1px solid var(--border);
+      border-radius: 13px;
+      background: rgba(255,255,255,.025);
+    }
+
+    .academic-item h3 {
+      margin-bottom: 8px;
+    }
+
+    .academic-item p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* ACHIEVEMENTS */
+
+    .timeline {
+      display: grid;
+      gap: 18px;
+    }
+
+    .timeline-item {
+      padding: 24px;
+      border-left: 3px solid var(--gold);
+      background: var(--card);
+      border-radius: 0 12px 12px 0;
+    }
+
+    .timeline-item span {
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 1px;
+    }
+
+    .timeline-item h3 {
+      margin: 7px 0;
+    }
+
+    .timeline-item p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* GALLERY */
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+
+    .gallery-item {
+      overflow: hidden;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: var(--card);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .gallery-note {
+      padding: 15px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* SOCIAL */
+
+    .social-section {
+      background: #091625;
+    }
+
+    .social-box {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .social-card {
+      padding: 30px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+    }
+
+    .social-card h3 {
+      margin-bottom: 8px;
+    }
+
+    .social-card p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 17px;
+    }
+
+    /* CONTACT */
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+
+    .contact-card {
+      padding: 30px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+    }
+
+    .contact-card h3 {
+      margin-bottom: 14px;
+    }
+
+    .contact-links {
+      display: grid;
+      gap: 10px;
+    }
+
+    .contact-link {
+      padding: 12px 14px;
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      color: #d7deea;
+      font-size: 14px;
+    }
+
+    .contact-link:hover {
+      border-color: var(--blue);
+      color: var(--blue);
+    }
+
+    /* FOOTER */
+
+    footer {
+      padding: 35px 0;
+      border-top: 1px solid var(--border);
+      background: #050c16;
+    }
+
+    .footer-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    footer p {
+      color: #79879a;
+      font-size: 13px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .footer-links a {
+      color: #9faabc;
+      font-size: 12px;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 850px) {
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 74px;
+        padding: 20px;
+        background: #07111f;
+        border-bottom: 1px solid var(--border);
+        flex-direction: column;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .about-grid,
+      .social-box,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cards-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .leaders-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .academic-list {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .music-box {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    @media (max-width: 520px) {
+
+      .hero {
+        min-height: 78vh;
+      }
+
+      .cards-grid,
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .leader-card {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .leader-buttons {
+        justify-content: center;
+      }
+
+      .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+    <div class="container nav">
+
+      <a href="#home" class="logo-wrap">
+        <img src="logo.png" alt="Kitovu Class Logo" class="logo">
+
+        <div class="logo-text">
+          KITOVU CLASS
+          <span>2024–2027</span>
+        </div>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle">
+        ☰
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#students">Students</a></li>
+        <li><a href="#leaders">Leaders</a></li>
+        <li><a href="#academics">Academics</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+    </div>
+  </header>
+
+
+  <!-- HERO -->
+
+  <main id="home">
+
+    <section class="hero">
+
+      <div class="container">
+
+        <div class="hero-content">
+
+          <span class="eyebrow">
+            Official Class Website
+          </span>
+
+          <h1>
+            2024–2027
+            <span>Class of Kitovu</span>
+          </h1>
+
+          <p>
+            One class. One journey. One legacy.
+            Welcome to the official digital home of
+            the 2024–2027 Class of Kitovu.
+          </p>
+
+          <div class="hero-buttons">
+
+            <a href="#leaders" class="btn btn-primary">
+              Meet Our Leaders
+            </a>
+
+            <a href="#about" class="btn btn-secondary">
+              Explore Our Class
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- MUSIC -->
+
+    <section class="music-section">
+
+      <div class="container">
+
+        <div class="music-box">
+
+          <div class="music-info">
+
+            <h2>🎵 Our Class Song</h2>
+
+            <p>
+              The official soundtrack of the
+              2024–2027 Class of Kitovu.
+            </p>
+
+            <div class="music-status" id="musicStatus">
+              Music is ready
+            </div>
+
+          </div>
+
+          <div class="music-controls">
+
+            <button
+              class="music-btn play-btn"
+              id="musicToggle"
+            >
+              ▶ PLAY MUSIC
+            </button>
+
+            <button
+              class="music-btn stop-btn"
+              id="musicStop"
+            >
+              ■ STOP
+            </button>
+
+          </div>
+
+        </div>
+
+        <audio id="classSong" preload="auto">
+          <source src="./class-song.mp3" type="audio/mpeg">
+        </audio>
+
+      </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section class="section" id="about">
+
+      <div class="container">
+
+        <div class="about-grid">
+
+          <div class="about-image">
+            <img
+              src="class-2027.png"
+              alt="2024–2027 Class of Kitovu"
+            >
+          </div>
+
+          <div class="about-text">
+
+            <div class="section-title">
+
+              <span>About Our Class</span>
+
+              <h2>
+                More Than A Class.
+                A Legacy.
+              </h2>
+
+            </div>
+
+            <p>
+              The 2024–2027 Class of Kitovu is a community
+              of students growing together, learning together
+              and creating memories that will last beyond
+              our school years.
+            </p>
+
+            <p>
+              From academics and leadership to sports,
+              entertainment and friendship, every student
+              contributes something special to our journey.
+            </p>
+
+            <a href="#students" class="btn btn-primary">
+              Discover More
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- STUDENTS -->
+
+    <section class="section" id="students">
+
+      <div class="container">
+
+        <div class="section-title">
+
+          <span>Our Community</span>
+
+          <h2>The Students</h2>
+
+          <p>
+            A strong class is built by the people
+            who make it unique.
+          </p>
+
+        </div>
+
+        <div class="cards-grid">
+
+          <article class="card">
+
+            <span class="card-icon">01</span>
+
+            <h3>Class Community</h3>
+
+            <p>
+              Students united by friendship,
+              teamwork and shared experiences.
+            </p>
+
+          </article>
+
+
+          <article class="card">
+
+            <span class="card-icon">02</span>
+
+            <h3>Class Leadership</h3>
+
+            <p>
+              Our ministers, representatives and
+              student leaders serving the
+              2024–2027 Class of Kitovu.
+            </p>
+
+            <a href="#leaders" class="btn btn-primary">
+              View Leaders
+            </a>
+
+          </article>
+
+
+          <article class="card">
+
+            <span class="card-icon">03</span>
+
+            <h3>Shared Memories</h3>
+
+            <p>
+              Events, celebrations, achievements
+              and moments we will never forget.
+            </p>
+
+            <a href="#gallery" class="btn btn-secondary">
+              View Gallery
+            </a>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- LEADERS -->
+
+    <section class="leaders-section" id="leaders">
+
+      <div class="container">
+
+        <div class="section-title">
+
+          <span>Class Leadership</span>
+
+          <h2>Meet Our Leaders</h2>
+
+          <p>
+            The students entrusted with helping lead,
+            represent and serve the 2024–2027 Class of Kitovu.
+          </p>
+
+        </div>
+
+
+        <div class="leaders-grid">
+
+
+          <!-- DHP / SHROFF -->
+
+          <article class="leader-card">
+
+            <div class="leader-avatar">
+              KD
+            </div>
+
+            <div class="leader-info">
+
+              <span class="leader-role">
+                DHP / SHROFF
+              </span>
+
+              <h3>
+                Kyomuhendo Daniel
+              </h3>
+
+              <p>
+                Shroff
+              </p>
+
+              <div class="leader-buttons">
+
+                <span class="social-btn pending">
+                  📷 Instagram Coming Soon
+                </span>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+          <!-- HEALTH MINISTER -->
+
+          <article class="leader-card">
+
+            <div class="leader-avatar">
+              SK
+            </div>
+
+            <div class="leader-info">
+
+              <span class="leader-role">
+                HEALTH MINISTER
+              </span>
+
+              <h3>
+                Sempijja Kenneth
+              </h3>
+
+              <p>
+                Health Minister
+              </p>
+
+              <div class="leader-buttons">
+
+                <a
+                  href="https://wa.me/256752086612"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-btn whatsapp"
+                >
+                  💬 WhatsApp
+                </a>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+          <!-- SECURITY MINISTER -->
+
+          <article class="leader-card">
+
+            <div class="leader-avatar">
+              BD
+            </div>
+
+            <div class="leader-info">
+
+              <span class="leader-role">
+                SECURITY MINISTER
+              </span>
+
+              <h3>
+                Byaruhanga Deo
+              </h3>
+
+              <p>
+                Security Minister
+              </p>
+
+              <div class="leader-buttons">
+
+                <span class="social-btn pending">
+                  📷 Instagram Pending
+                </span>
+
+                <a
+                  href="https://wa.me/256769015234"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-btn whatsapp"
+                >
+                  💬 WhatsApp
+                </a>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+          <!-- ENTERTAINMENT MINISTER -->
+
+          <article class="leader-card">
+
+            <div class="leader-avatar">
+              NB
+            </div>
+
+            <div class="leader-info">
+
+              <span class="leader-role">
+                ENTERTAINMENT MINISTER
+              </span>
+
+              <h3>
+                Nsereko Brighton
+              </h3>
+
+              <p>
+                Entertainment Minister
+              </p>
+
+              <div class="leader-buttons">
+
+                <span class="social-btn pending">
+                  📷 Instagram Coming Soon
+                </span>
+
+                <a
+                  href="https://wa.me/256701196919"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-btn whatsapp"
+                >
+                  💬 WhatsApp
+                </a>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+          <!-- GENERAL DUTIES MINISTER -->
+
+          <article class="leader-card">
+
+            <div class="leader-avatar">
+              MJ
+            </div>
+
+            <div class="leader-info">
+
+              <span class="leader-role">
+                GENERAL DUTIES MINISTER
+              </span>
+
+              <h3>
+                Mayinja Jonathan
+              </h3>
+
+              <p>
+                MJ Tones
+              </p>
+
+              <div class="leader-buttons">
+
+                <a
+                  href="https://wa.me/256776382701"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-btn whatsapp"
+                >
+                  💬 WhatsApp
+                </a>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+          <!-- RELIGIOUS MINISTER -->
+
+          <article class="leader-card">
+
+            <div class="leader-avatar">
+              B
+            </div>
+
+            <div class="leader-info">
+
+              <span class="leader-role">
+                RELIGIOUS MINISTER
+              </span>
+
+              <h3>
+                Bournaventure
+              </h3>
+
+              <p>
+                Religious Minister
+              </p>
+
+              <div class="leader-buttons">
+
+                <span class="social-btn pending">
+                  📷 Instagram Coming Soon
+                </span>
+
+                <span class="social-btn pending">
+                  💬 WhatsApp Coming Soon
+                </span>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+          <!-- CATERING MINISTER -->
+
+          <article class="leader-card">
+
+            <div class="leader-avatar">
+              AQ
+            </div>
+
+            <div class="leader-info">
+
+              <span class="leader-role">
+                CATERING MINISTER
+              </span>
+
+              <h3>
+                Akatorona Quintine
+              </h3>
+
+              <p>
+                ARK
+              </p>
+
+              <div class="leader-buttons">
+
+                <a
+                  href="https://wa.me/256778602614"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-btn whatsapp"
+                >
+                  💬 WhatsApp
+                </a>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+          <!-- INFORMATION MINISTER -->
+
+          <article class="leader-card">
+
+            <div class="leader-avatar">
+              DT
+            </div>
+
+            <div class="leader-info">
+
+              <span class="leader-role">
+                INFORMATION MINISTER
+              </span>
+
+              <h3>
+                Duncan
+              </h3>
+
+              <p>
+                Information Minister
+              </p>
+
+              <div class="leader-buttons">
+
+                <span class="social-btn pending">
+                  📷 Instagram Coming Soon
+                </span>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+          <!-- SPORTS MINISTER -->
+
+          <article class="leader-card">
+
+            <div class="leader-avatar">
+              AT
+            </div>
+
+            <div class="leader-info">
+
+              <span class="leader-role">
+                SPORTS MINISTER
+              </span>
+
+              <h3>
+                Arnold Tumwesije
+              </h3>
+
+              <p>
+                Sports Minister
+              </p>
+
+              <div class="leader-buttons">
+
+                <span class="social-btn pending">
+                  📷 Instagram Coming Soon
+                </span>
+
+                <span class="social-btn pending">
+                  💬 WhatsApp Coming Soon
+                </span>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ACADEMICS -->
+
+    <section class="section academics" id="academics">
+
+      <div class="container">
+
+        <div class="section-title">
+
+          <span>Our Journey</span>
+
+          <h2>Academics</h2>
+
+          <p>
+            Building knowledge, discipline and skills
+            for the future.
+          </p>
+
+        </div>
+
+        <div class="academic-list">
+
+          <article class="academic-item">
+            <h3>📚 Academic Excellence</h3>
+            <p>
+              Working together to improve performance
+              and encourage academic growth.
+            </p>
+          </article>
+
+          <article class="academic-item">
+            <h3>🧠 Knowledge</h3>
+            <p>
+              Developing critical thinking, creativity
+              and problem-solving skills.
+            </p>
+          </article>
+
+          <article class="academic-item">
+            <h3>🎯 Goals</h3>
+            <p>
+              Staying focused on our individual
+              and collective goals.
+            </p>
+          </article>
+
+          <article class="academic-item">
+            <h3>🤝 Teamwork</h3>
+            <p>
+              Supporting one another throughout
+              our academic journey.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ACHIEVEMENTS -->
+
+    <section class="section" id="achievements">
+
+      <div class="container">
+
+        <div class="section-title">
+
+          <span>Our Story</span>
+
+          <h2>Achievements & Events</h2>
+
+          <p>
+            Important moments and milestones
+            throughout our class journey.
+          </p>
+
+        </div>
+
+        <div class="timeline">
+
+          <article class="timeline-item">
+
+            <span>2024</span>
+
+            <h3>The Beginning</h3>
+
+            <p>
+              The 2024–2027 Class of Kitovu
+              officially began its journey.
+            </p>
+
+          </article>
+
+          <article class="timeline-item">
+
+            <span>2025</span>
+
+            <h3>Growing Together</h3>
+
+            <p>
+              New friendships, responsibilities,
+              achievements and unforgettable moments.
+            </p>
+
+          </article>
+
+          <article class="timeline-item">
+
+            <span>2026</span>
+
+            <h3>Stronger Together</h3>
+
+            <p>
+              Continuing to grow academically,
+              socially and as leaders.
+            </p>
+
+          </article>
+
+          <article class="timeline-item">
+
+            <span>2027</span>
+
+            <h3>The Legacy</h3>
+
+            <p>
+              The year our journey reaches a major
+              milestone and our legacy continues.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- GALLERY -->
+
+    <section class="section" id="gallery">
+
+      <div class="container">
+
+        <div class="section-title">
+
+          <span>Memories</span>
+
+          <h2>Class Gallery</h2>
+
+          <p>
+            Add your real class photos here.
+          </p>
+
+        </div>
+
+        <div class="gallery">
+
+          <!-- Replace these with your actual photos -->
+
+          <div class="gallery-item">
+            <img
+              src="gallery1.jpg"
+              alt="Kitovu Class Memory 1"
+            >
+            <div class="gallery-note">
+              Class Memory
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="gallery2.jpg"
+              alt="Kitovu Class Memory 2"
+            >
+            <div class="gallery-note">
+              Class Memory
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="gallery3.jpg"
+              alt="Kitovu Class Memory 3"
+            >
+            <div class="gallery-note">
+              Class Memory
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- SOCIAL -->
+
+    <section class="section social-section" id="social">
+
+      <div class="container">
+
+        <div class="section-title">
+
+          <span>Stay Connected</span>
+
+          <h2>Follow The Class</h2>
+
+          <p>
+            Keep up with class updates,
+            memories and activities.
+          </p>
+
+        </div>
+
+        <div class="social-box">
+
+          <article class="social-card">
+
+            <h3>📷 Class Instagram</h3>
+
+            <p>
+              Follow the official class Instagram
+              account for updates and memories.
+            </p>
+
+            <a
+              href="https://www.instagram.com/just_herman2"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+            >
+              @just_herman2
+            </a>
+
+          </article>
+
+
+          <article class="social-card">
+
+            <h3>👤 Website Creator</h3>
+
+            <p>
+              Follow the creator behind this
+              class website.
+            </p>
+
+            <a
+              href="https://www.instagram.com/hermankharel"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-secondary"
+            >
+              @hermankharel
+            </a>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section class="section" id="contact">
+
+      <div class="container">
+
+        <div class="section-title">
+
+          <span>Connect With Us</span>
+
+          <h2>Contact & Links</h2>
+
+          <p>
+            Everything you need to stay connected
+            with the 2024–2027 Class of Kitovu.
+          </p>
+
+        </div>
+
+        <div class="contact-grid">
+
+          <div class="contact-card">
+
+            <h3>🔗 Class Links</h3>
+
+            <div class="contact-links">
+
+              <a
+                class="contact-link"
+                href="https://www.instagram.com/just_herman2"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                📷 Official Class Instagram
+              </a>
+
+              <a
+                class="contact-link"
+                href="#leaders"
+              >
+                👥 View Class Leaders
+              </a>
+
+              <a
+                class="contact-link"
+                href="#gallery"
+              >
+                🖼️ View Class Gallery
+              </a>
+
+              <a
+                class="contact-link"
+                href="#achievements"
+              >
+                🏆 View Achievements
+              </a>
+
+            </div>
+
+          </div>
+
+
+          <div class="contact-card">
+
+            <h3>👤 Website Creator</h3>
+
+            <p style="color:#9faabc; margin-bottom:18px;">
+              This official class website was created
+              to preserve the memories, leadership and
+              journey of the 2024–2027 Class of Kitovu.
+            </p>
+
+            <a
+              href="https://www.instagram.com/hermankharel"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+            >
+              Instagram @hermankharel
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="container footer-content">
+
+      <p>
+        © <span id="year"></span>
+        2024–2027 Class of Kitovu.
+        All rights reserved.
+      </p>
+
+      <div class="footer-links">
+
+        <a href="#home">Home</a>
+
+        <a href="#leaders">Leaders</a>
+
+        <a
+          href="https://www.instagram.com/just_herman2"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Class Instagram
+        </a>
+
+        <a
+          href="https://www.instagram.com/hermankharel"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Creator Instagram
+        </a>
+
+        <a href="#home">
+          Back to top ↑
+        </a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- JAVASCRIPT -->
+
+  <script>
+
+    /* YEAR */
+
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+
+    /* MOBILE MENU */
+
+    const menuToggle =
+      document.getElementById("menuToggle");
+
+    const navLinks =
+      document.getElementById("navLinks");
+
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+
+    document
+      .querySelectorAll("#navLinks a")
+      .forEach(link => {
+
+        link.addEventListener("click", () => {
+          navLinks.classList.remove("active");
+        });
+
+      });
+
+
+    /* MUSIC PLAYER */
+
+    const classSong =
+      document.getElementById("classSong");
+
+    const musicToggle =
+      document.getElementById("musicToggle");
+
+    const musicStop =
+      document.getElementById("musicStop");
+
+    const musicStatus =
+      document.getElementById("musicStatus");
+
+
+    musicToggle.addEventListener("click", async () => {
+
+      try {
+
+        if (classSong.paused) {
+
+          await classSong.play();
+
+          musicToggle.textContent =
+            "⏸ PAUSE MUSIC";
+
+          musicStatus.textContent =
+            "Now playing 🎵";
+
+        } else {
+
+          classSong.pause();
+
+          musicToggle.textContent =
+            "▶ PLAY MUSIC";
+
+          musicStatus.textContent =
+            "Music is paused";
+
+        }
+
+      } catch (error) {
+
+        console.error(error);
+
+        musicStatus.textContent =
+          "⚠️ Music could not play. Check that class-song.mp3 is uploaded.";
+
+      }
+
+    });
+
+
+    musicStop.addEventListener("click", () => {
+
+      classSong.pause();
+
+      classSong.currentTime = 0;
+
+      musicToggle.textContent =
+        "▶ PLAY MUSIC";
+
+      musicStatus.textContent =
+        "Music stopped";
+
+    });
+
+
+    classSong.addEventListener("loadedmetadata", () => {
+
+      musicStatus.textContent =
+        "Music is ready 🎵";
+
+    });
+
+
+    classSong.addEventListener("error", () => {
+
+      musicStatus.textContent =
+        "⚠️ class-song.mp3 could not be found.";
+
+    });
+
+  </script>
+
+</body>
+                </html>
